@@ -53,7 +53,8 @@ button{
    
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+    padding:0 15px ;
 }
 
 .section-title h1{
@@ -259,7 +260,7 @@ letter-spacing: 10px;
 }
 
 .about-section{
-    padding: 80px 0;
+    padding: 80px 0 0;
 }
 
 .about-section .about-img{
@@ -299,6 +300,7 @@ animation:ani01 5s linear infinite;
 
 .about-section .section-title{
     margin-bottom: 30px;
+    padding: 0;
 }
 
 .about-section .about-content p{
@@ -333,4 +335,66 @@ text-transform: uppercase;
 
 .about-section .about-content .btn{
 margin-top: 30px ;
+}
+
+/* Service Section */
+
+.service-section{
+    padding: 80px 0 80px;
+
+}
+
+.service-section .service-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding:0 15px;
+    margin-bottom: 30px;
+}
+
+.service-section .service-item-inner{
+position: relative;
+overflow: hidden;
+}
+.service-section .service-item-inner img{
+width: 100%;
+display: block;
+filter: grayscale(100%);
+transition: all 0.5s ease ;
+}
+
+.service-section .service-item-inner:hover img{
+filter: grayscale(0);
+transform: scale(1.1);
+}
+
+.service-section .service-item-inner .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    transition: all 0.5s ease ;
+}
+
+
+.service-section .service-item-inner:hover .overlay{
+   background-color: transparent;
+}
+
+.service-section .service-item-inner .overlay h4{
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    transition: all 0.5s ease ;
+    text-transform: capitalize;
+}
+
+.service-section .service-item-inner .overlay:hover h4{
+transform: translateX(30px);
+opacity: 0;
 }
